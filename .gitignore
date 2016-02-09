@@ -1,4 +1,5 @@
+!scripts/libs
 scripts/libs/*
-!scripts/libs/userCss
 !scripts/libs/userscript
+!scripts/libs/userCss
 .idea
