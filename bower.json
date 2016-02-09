@@ -16,7 +16,12 @@
     "**/.*",
     "node_modules",
     "bower_components",
-    "scripts/libs",
+    "scripts/libs/backbone",
+    "scripts/libs/bootstrap",
+    "scripts/libs/jquery",
+    "scripts/libs/requirejs",
+    "scripts/libs/text",
+    "scripts/libs/underscore",
     "test",
     "tests"
   ],
