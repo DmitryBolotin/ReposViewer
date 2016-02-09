@@ -1,5 +1,7 @@
-!scripts/libs
-scripts/libs/*
-!scripts/libs/userscript
-!scripts/libs/userCss
+scripts/libs/backbone
+scripts/libs/bootstrap
+scripts/libs/jquery
+scripts/libs/requirejs
+scripts/libs/text
+scripts/libs/underscore
 .idea
