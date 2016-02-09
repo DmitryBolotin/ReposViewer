@@ -1,0 +1,31 @@
+{
+  "name": "CleanStart",
+  "description": "start project from 0",
+  "main": "main",
+  "moduleType": [],
+  "keywords": [
+    "some",
+    "words"
+  ],
+  "authors": [
+    "Dmitry Bolotin"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "scripts/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "backbone": "~1.2.3",
+    "underscore": "~1.8.3",
+    "requirejs": "~2.1.20",
+    "text": "~2.0.14",
+    "bootstrap": "~3.3.6"
+  }
+}

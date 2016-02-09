@@ -1,0 +1,36 @@
+<div style="margin-bottom: 4px; background: moccasin">
+    <div class="row">
+        <div class="col-sm-4 portfolio-item"> <h3><%= proj.name %></h3></div>
+        <div class="col-md-1 portfolio-item">
+            <span class="glyphicon glyphicon-eye-open" aria-hidden="true" title="Watchers count!"> <%= proj.watchers_count %></span>
+        </div>
+        <div class="col-md-1 portfolio-item">
+                <span class="glyphicon glyphicon-random" aria-hidden="true"  title="Forks count!"> <%= proj.forks_count %></span>
+
+        </div>
+    </div>
+<div class="row">
+    <div class="col-md-6 portfolio-item">
+        <h4><i>Description: <%= proj.description %></i></h4>
+        <a href="#" data-toggle="tooltip" data-placement="left" title="Hooray!">Hoo</a>
+    </div>
+    <div class="col-sm-4 portfolio-item">
+        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+                <div class="caption-content">
+                    <%= proj.name %>
+                </div>
+            </div>
+            <img src="img/portfolio/cabin.png" class="img-responsive" alt="">
+        </a>
+    </div>
+    <%
+    $(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+    console.log("userScript");
+    });
+
+    %>
+
+</div>
+</div>

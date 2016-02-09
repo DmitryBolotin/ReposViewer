@@ -1,0 +1,40 @@
+ ---view
+
+  // console.log(userModel.get('id'));
+                        /*
+                        _.each(userModel.models,function(item){
+                            var some = item.get('id');
+                            console.log(some)
+                        });
+                        */
+
+                                                /*
+                                                that.$el.html(that.template({
+                                                    usersId: userModel.models[0],
+                                                    usersLogin: userModel.models[0]
+                                                }));
+                                                */
+
+                                                    var collectionObject = [];
+                                                            var that = this;
+                                                            var users_collection = new UsersCollection() ;
+                                                            users_collection.fetch({
+                                                                    success: function (userModel) {
+                                                                        _.each(userModel.models, function(value){
+                                                                             collectionObject.push(value.attributes);
+                                                                           // console.log(collectionObject);
+                                                                           // console.log(key);
+                                                                        });
+                                                                        that.$el.html(that.template({
+                                                                            users: collectionObject
+                                                                        }));
+                                                                        return this;
+                                                                    }});
+
+                                                                         /*
+                                                                                        _.each(userModel.models, function(value){
+
+                                                                                            collectionObject.push(value.attributes);
+                                                                                            console.log(collectionObject);
+                                                                                            // console.log(key);
+                                                                                        }); */

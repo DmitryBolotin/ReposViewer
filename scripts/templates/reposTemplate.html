@@ -1,0 +1,20 @@
+<!-- Portfolio Item Grid -->
+<div class="col-sm-4 portfolio-item" >
+    <div class="btn disabled bg-info"><%= proj.name %></div>
+        <a href="#portfolioModal" class="portfolio-link" data-toggle="modal" >
+            <div class="caption"  id="<%= proj.name %>">
+                <div class="caption-content">
+                   <h3> <%= proj.name %> </h3>
+                    <p>
+                        <span class="glyphicon glyphicon-eye-open" data-toggle="tooltip" data-placement="bottom"  aria-hidden="true" title="Watchers count!">
+                            <%= proj.watchers_count %>
+                        </span>
+                        <span class="glyphicon glyphicon-random" data-toggle="tooltip" data-placement="bottom" aria-hidden="true"  title="Forks count!">
+                            <%= proj.forks_count%>
+                        </span>
+                    </p>
+                </div>
+            </div>
+            <img src="img/portfolio/<%= proj.name %>.png"   class="img-responsive" alt="Project name">
+        </a>
+</div>
